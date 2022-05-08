@@ -151,6 +151,7 @@ bool DeleteNode(LNode* p)
 	free(q);
 	return true;
 }
+
 //按位查找，返回第i个元素(带头结点)
 LNode* GetElem(LinkList L, int i)
 {

@@ -17,4 +17,7 @@ void testDeleteNode()
 		L->data = i;
 		L = L->next;
 	}
+
+
+
 }
