@@ -152,6 +152,8 @@ bool DeleteNode(LNode* p)
 	return true;
 }
 
+
+
 //按位查找，返回第i个元素(带头结点)
 LNode* GetElem(LinkList L, int i)
 {
@@ -167,3 +169,16 @@ LNode* GetElem(LinkList L, int i)
 	}
 	return p;
 }
+
+//按值查找，找到数据域等于e的结点
+LNode* LocateElem(LinkList L, ElemType e)
+{
+	LNode* p = L->next;
+	//从第1个结点开始查找数据域为e的结点
+	while (p != NULL && p->data != e)
+	{
+		p = p->next;
+	}
+	return p;//找到后返回结点指针
+}
+

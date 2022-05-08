@@ -27,5 +27,6 @@ bool InsertPriorNode(LNode* p, LNode* s);//前插操作：在p结点之前插入结点s
 bool ListDelete(LinkList& L, int i, ElemType &e);//删除操作(带头结点)：删除L中第i个位置的元素，并用e返回删除元素的值
 bool DeleteNode(LNode* p);//删除指定结点p
 LNode* GetElem(LinkList L, int i);//按位查找，返回第i个元素(带头结点)
+LNode* LocateElem(LinkList L, ElemType e);//按值查找，找到数据域等于e的结点
 #endif
 
