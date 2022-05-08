@@ -28,5 +28,6 @@ bool ListDelete(LinkList& L, int i, ElemType &e);//删除操作(带头结点)：删除L中第
 bool DeleteNode(LNode* p);//删除指定结点p
 LNode* GetElem(LinkList L, int i);//按位查找，返回第i个元素(带头结点)
 LNode* LocateElem(LinkList L, ElemType e);//按值查找，找到数据域等于e的结点
+int Length(LinkList L);//求表的长度
 #endif
 

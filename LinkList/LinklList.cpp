@@ -182,3 +182,16 @@ LNode* LocateElem(LinkList L, ElemType e)
 	return p;//找到后返回结点指针
 }
 
+//求表长
+int Length(LinkList L)
+{
+	int len = 0;
+	LNode* p = L;
+	while (p->next != NULL)
+	{
+		p = p->next;
+		len++;
+	}
+	return len;
+}
+
